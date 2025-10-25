@@ -1,0 +1,36 @@
+html
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>File Upload Manager</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 900px; margin: 30px auto; padding: 0 16px; }
+    .card { border: 1px solid #ddd; padding: 16px; border-radius: 8px; margin-bottom: 16px; }
+    button { padding: 8px 12px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px;}
+    th, td { border: 1px solid #eee; padding: 8px; text-align: left; }
+  </style>
+</head>
+<body>
+  <h1>File Upload Manager</h1>
+
+  <div class="card">
+    <h3>Upload a file</h3>
+    <form id="uploadForm">
+      <input type="file" id="fileInput" name="file" required />
+      <button type="submit">Upload</button>
+    </form>
+    <div id="uploadMsg"></div>
+  </div>
+
+  <div class="card">
+    <h3>Uploaded files</h3>
+    <button id="refreshBtn">Refresh list</button>
+    <div id="filesList"></div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
